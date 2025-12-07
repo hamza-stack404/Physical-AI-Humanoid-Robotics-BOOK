@@ -1,0 +1,25 @@
+{
+  "id": "Sensors & Actuators",
+  "title": "Sensors & Actuators",
+  "description": "For a Physical AI to interact with the real world, it needs the means to perceive its surroundings and to act upon them. This is achieved through sensors and actuators, which are analogous to a biological organism's sensory organs and muscles. This chapter introduces the fundamental types and principles of these critical robotic components.",
+  "source": "@site/docs/Sensors & Actuators.mdx",
+  "sourceDirName": ".",
+  "slug": "/Sensors & Actuators",
+  "permalink": "/docs/Sensors & Actuators",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Sensors & Actuators"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Foundations of Robotics",
+    "permalink": "/docs/Foundations of Robotics"
+  },
+  "next": {
+    "title": "Control Systems",
+    "permalink": "/docs/Control Systems"
+  }
+}

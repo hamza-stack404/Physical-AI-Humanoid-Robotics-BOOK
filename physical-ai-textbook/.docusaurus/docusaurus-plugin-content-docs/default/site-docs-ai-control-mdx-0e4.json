@@ -1,0 +1,25 @@
+{
+  "id": "AI Control",
+  "title": "AI Control",
+  "description": "While classical control systems provide a robust foundation for robot motion, they often rely on precise models and pre-programmed trajectories. AI Control represents a paradigm shift, where control policies are learned, not just programmed. This chapter explores how artificial intelligence, particularly deep reinforcement learning (RL), is used to create adaptive, intelligent, and highly complex behaviors.",
+  "source": "@site/docs/AI Control.mdx",
+  "sourceDirName": ".",
+  "slug": "/AI Control",
+  "permalink": "/docs/AI Control",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "AI Control"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Perception Systems (Vision, Audio, Tactile)",
+    "permalink": "/docs/Perception Systems (Vision, Audio, Tactile)"
+  },
+  "next": {
+    "title": "Human-Robot Interaction",
+    "permalink": "/docs/Human-Robot Interaction"
+  }
+}

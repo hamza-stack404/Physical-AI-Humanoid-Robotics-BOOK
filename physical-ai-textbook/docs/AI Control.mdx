@@ -1,0 +1,57 @@
+---
+title: AI Control
+---
+
+# AI Control: Learning to Act
+
+While classical control systems provide a robust foundation for robot motion, they often rely on precise models and pre-programmed trajectories. **AI Control** represents a paradigm shift, where control policies are learned, not just programmed. This chapter explores how artificial intelligence, particularly deep reinforcement learning (RL), is used to create adaptive, intelligent, and highly complex behaviors.
+
+## The Limits of Classical Control
+
+Traditional methods like PID control are excellent for tasks with clear, low-dimensional error signals (e.g., "keep this joint at a 90-degree angle"). However, they struggle with:
+
+*   **High-Dimensional Tasks:** How do you program the control for a multi-fingered hand picking up an oddly shaped object? The state space is enormous.
+*   **Uncertainty and Variation:** Classical controllers can be brittle. They may fail if the environment changes in unexpected ways (e.g., the object is heavier than expected).
+*   **Complex Objectives:** How do you write a simple error function for "walk with a natural-looking gait"?
+
+## Reinforcement Learning: The Core Idea
+
+Reinforcement Learning provides a solution. Instead of programming the "how," we define the "what." The core components are:
+
+1.  **Agent:** The robot or the control policy.
+2.  **Environment:** The world the robot exists in (or a simulation of it).
+3.  **State (s):** A representation of the environment at a moment in time (e.g., joint angles, camera images).
+4.  **Action (a):** A command the agent sends to its actuators (e.g., motor torques).
+5.  **Reward (r):** A scalar feedback signal that tells the agent how well it's doing. This is the crucial element you design.
+
+The agent's goal is to learn a **policy (π)** that maps states to actions (`π(s) -> a`) in a way that maximizes the cumulative future reward. The agent learns this policy through trial and error, constantly exploring and refining its behavior based on the rewards it receives.
+
+### Example: Learning to Walk
+
+*   **Objective:** Make a humanoid robot walk forward.
+*   **State:** Joint angles, torso orientation, velocity.
+*   **Action:** Torques to apply to each leg joint motor.
+*   **Reward Function:**
+    *   `+` Positive reward for forward velocity.
+    *   `-` Negative reward (penalty) for falling over.
+    *   `-` Small penalty for high energy consumption (large torques).
+
+The RL algorithm will, over millions of simulated steps, discover a pattern of actions (a gait) that keeps the robot upright and moving forward, balancing the trade-offs defined in the reward function.
+
+## Key RL Algorithms for Control
+
+*   **Policy Optimization (e.g., PPO, TRPO):** These methods directly optimize the policy parameters to maximize reward. They are workhorses of modern robotics research.
+*   **Value Function Methods (e.g., Q-Learning, DQN):** These methods learn to estimate the expected future reward from any given state-action pair. This "Q-value" can then be used to select the best action.
+*   **Actor-Critic Methods (e.g., A2C, SAC):** A hybrid approach that combines the strengths of both. An "actor" component learns the policy, while a "critic" component learns a value function to provide better feedback to the actor.
+
+## The Sim-to-Real Challenge
+
+One of the biggest hurdles in AI control is the **"sim-to-real" gap**. Training a policy on a real robot is often slow, expensive, and dangerous. Therefore, most training is done in simulation. However, a policy that works perfectly in a simulated environment may fail on the real robot because the simulation is never a perfect model of reality.
+
+Techniques to bridge this gap include:
+
+*   **Domain Randomization:** Intentionally varying the simulation's parameters (e.g., friction, mass, lighting) during training. This forces the policy to become more robust and less reliant on the specific details of any single simulated world.
+*   **System Identification:** Building a more accurate model of the real robot's dynamics to improve the simulation's fidelity.
+*   **Fine-tuning:** Training the policy for a large number of steps in simulation and then carefully continuing the training for a small number of steps on the real robot.
+
+AI control is a rapidly evolving field that is unlocking new capabilities in robotics, enabling machines to perform tasks that were previously impossible to program by hand.

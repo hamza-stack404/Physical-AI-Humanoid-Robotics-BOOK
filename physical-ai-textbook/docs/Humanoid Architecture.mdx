@@ -1,0 +1,63 @@
+---
+title: Humanoid Architecture
+---
+
+# Humanoid Architecture: Building a Human-Like Robot
+
+Humanoid robots are complex machines designed to mimic the human form, capable of operating in environments built for humans. Their architecture presents unique challenges and opportunities compared to other robot types. This chapter explores the fundamental design considerations and typical structural components of humanoid robots.
+
+## Why Humanoid?
+
+The primary motivation for humanoid robots is their ability to leverage existing human infrastructure. They can open human-designed doors, sit in human chairs, use human tools, and navigate environments like homes, offices, and factories without significant modifications. This universality of form is a powerful driver for their development.
+
+## Key Architectural Components
+
+A humanoid robot's architecture is broadly divided into a torso, limbs, and a head, each with specific design considerations.
+
+### 1. Torso (Trunk)
+
+The torso is the central hub of the humanoid, connecting the limbs and housing critical components.
+
+*   **Structure:** Often designed with a rigid spine or a series of articulated segments. A key design choice is whether to include waist joints (yaw, pitch, roll) to increase dexterity and balance capabilities.
+*   **Power and Computing:** Typically houses the main batteries, central processing units (CPUs), graphics processing units (GPUs), and communication hardware.
+*   **Stability:** The torso's mass and inertia play a critical role in the robot's overall balance, especially during dynamic movements like walking or reaching.
+
+### 2. Limbs: Arms and Legs
+
+The limbs provide manipulation and locomotion capabilities, and their design heavily influences the robot's functionality.
+
+#### Legs
+
+*   **Degrees of Freedom (DoF):** Humanoid legs usually have 6 or 7 DoF per leg to mimic human movement: 3 at the hip (pitch, roll, yaw), 1 at the knee (pitch), and 2 or 3 at the ankle (pitch, roll, sometimes yaw).
+*   **Actuation:** High-power and high-precision actuators are crucial. Electric motors with gear reduction are common, but hydraulics (as seen in Boston Dynamics Atlas) offer higher power density for dynamic tasks.
+*   **Foot Design:** The feet provide the contact point with the ground. Some humanoids use simple flat feet, while others incorporate compliant soles or even articulated toes to improve balance and grip on uneven surfaces.
+*   **Sensing:** Force-torque sensors in the ankles/feet are vital for measuring ground reaction forces, which are critical for balance control. Proprioceptive sensors (encoders) at each joint track joint angles.
+
+#### Arms
+
+*   **Degrees of Freedom (DoF):** Humanoid arms typically have 6 or 7 DoF per arm to provide a good balance between reach, dexterity, and control complexity: 3 at the shoulder, 1 at the elbow, and 2 or 3 at the wrist.
+*   **Hands/End-Effectors:** This is where the most significant design variations occur.
+    *   **Simple Grippers:** Two-finger parallel grippers are common for industrial tasks due to their robustness and simplicity.
+    *   **Multi-Fingered Hands:** Designed to mimic human hands, offering high dexterity for grasping complex objects and using tools. These are significantly more complex to control.
+    *   **Soft Grippers:** Using compliant materials, these can conform to objects of various shapes and sizes.
+*   **Load Capacity:** Arms must be designed to lift and manipulate objects of varying weights, requiring careful consideration of motor torque and structural integrity.
+
+### 3. Head
+
+The head of a humanoid robot serves as the primary sensor platform.
+
+*   **Sensors:**
+    *   **Vision:** Stereoscopic cameras (mimicking human eyes) provide depth perception. Other cameras might be used for wider fields of view or specific tasks.
+    *   **Audio:** Microphones for speech recognition and sound source localization.
+    *   **IMUs:** Inertial Measurement Units (accelerometers and gyroscopes) provide data on head orientation and movement, crucial for gaze stabilization.
+*   **Neck DoF:** A multi-DoF neck (e.g., 3-DoF for pitch, yaw, and roll) allows the robot to orient its sensors effectively, track objects, and convey non-verbal communication cues.
+*   **Expression (Optional):** Some research humanoids incorporate expressive faces or LED displays to facilitate human-robot interaction.
+
+## Key Design Challenges
+
+*   **Stability and Balance:** Maintaining balance, especially during dynamic locomotion, is a continuous computational challenge. The high center of mass and small foot area make humanoids inherently unstable.
+*   **Power Density:** Packing enough power (batteries and motors) into a human-sized form factor while maintaining reasonable weight is difficult.
+*   **Actuator Compliance:** Human joints are compliant (springy), which helps with impact absorption and energy efficiency. Robotic joints are often rigid, leading to harder impacts and less graceful motion.
+*   **Redundancy and Dexterity:** Achieving human-level dexterity and redundancy in motion is extremely complex, both mechanically and computationally.
+
+The architecture of a humanoid robot is a careful balance between biological inspiration and engineering feasibility, constantly pushing the boundaries of mechanical and computational design.

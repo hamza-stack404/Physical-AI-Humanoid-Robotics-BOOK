@@ -1,0 +1,16 @@
+{
+  "id": "Future",
+  "title": "Future",
+  "description": "The field of Physical AI is rapidly evolving, driven by advancements in robotics, artificial intelligence, and materials science. This chapter explores the current trends, examines prominent case studies that highlight the state-of-the-art, and speculates on the transformative impact Physical AI will have on industries and society.",
+  "source": "@site/docs/Future.mdx",
+  "sourceDirName": ".",
+  "slug": "/Future",
+  "permalink": "/docs/Future",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Future"
+  }
+}

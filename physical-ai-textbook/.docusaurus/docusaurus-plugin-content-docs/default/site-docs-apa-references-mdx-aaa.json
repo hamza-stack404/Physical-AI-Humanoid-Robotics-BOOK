@@ -1,0 +1,21 @@
+{
+  "id": "APA References",
+  "title": "APA References",
+  "description": "This section provides a list of key academic papers, books, and articles that form the foundation of the topics discussed in this textbook. The entries are formatted according to the American Psychological Association (APA) 7th edition style.",
+  "source": "@site/docs/APA References.mdx",
+  "sourceDirName": ".",
+  "slug": "/APA References",
+  "permalink": "/docs/APA References",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "APA References"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Conclusion",
+    "permalink": "/docs/Conclusion"
+  }
+}

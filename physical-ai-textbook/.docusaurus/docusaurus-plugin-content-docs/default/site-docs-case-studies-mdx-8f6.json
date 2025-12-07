@@ -1,0 +1,16 @@
+{
+  "id": "Case Studies",
+  "title": "Case Studies",
+  "description": "This chapter explores several landmark projects and systems that exemplify the principles of Physical AI. By examining these real-world examples, we can gain a deeper understanding of the challenges, solutions, and future potential of the field.",
+  "source": "@site/docs/Case Studies.mdx",
+  "sourceDirName": ".",
+  "slug": "/Case Studies",
+  "permalink": "/docs/Case Studies",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Case Studies"
+  }
+}

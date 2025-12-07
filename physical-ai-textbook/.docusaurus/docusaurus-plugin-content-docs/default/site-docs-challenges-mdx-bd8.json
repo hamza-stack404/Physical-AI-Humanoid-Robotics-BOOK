@@ -1,0 +1,25 @@
+{
+  "id": "Challenges",
+  "title": "Challenges",
+  "description": "Despite rapid progress, the field of Physical AI faces significant and fundamental challenges. These are not incremental problems but major hurdles that require breakthroughs in hardware, software, and theory. This chapter outlines some of the most critical challenges that researchers and engineers are currently tackling.",
+  "source": "@site/docs/Challenges.mdx",
+  "sourceDirName": ".",
+  "slug": "/Challenges",
+  "permalink": "/docs/Challenges",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Challenges"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Human-Robot Interaction",
+    "permalink": "/docs/Human-Robot Interaction"
+  },
+  "next": {
+    "title": "Future of Physical AI & Case Studies",
+    "permalink": "/docs/Future of Physical AI & Case Studies"
+  }
+}

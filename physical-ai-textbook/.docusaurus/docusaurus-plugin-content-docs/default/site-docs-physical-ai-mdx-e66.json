@@ -1,0 +1,25 @@
+{
+  "id": "Physical AI",
+  "title": "Physical AI",
+  "description": "Physical AI is an emerging and transformative field that focuses on developing artificial intelligence systems that can perceive, reason, and act intelligently within the physical world. Unlike traditional AI, which often operates in purely digital or simulated environments, Physical AI is inherently tied to a physical body, allowing it to interact directly with the complexities and uncertainties of real-world physics.",
+  "source": "@site/docs/Physical AI.mdx",
+  "sourceDirName": ".",
+  "slug": "/Physical AI",
+  "permalink": "/docs/Physical AI",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Physical AI"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Abstract",
+    "permalink": "/docs/Abstract"
+  },
+  "next": {
+    "title": "Embodiment",
+    "permalink": "/docs/Embodiment"
+  }
+}

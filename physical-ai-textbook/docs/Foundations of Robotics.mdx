@@ -1,0 +1,69 @@
+---
+title: Foundations of Robotics
+---
+
+# Foundations of Robotics: The Language of Motion
+
+Before we can make a robot intelligent, we must first understand how to describe and command its motion. This chapter introduces the mathematical foundations of robotics: the language we use to define the position, orientation, and movement of a robot in its world.
+
+## Coordinate Frames and Transformations
+
+The most fundamental concept is the **coordinate frame**, an imaginary set of axes used as a reference. In robotics, we use many coordinate frames:
+
+*   **World Frame:** A fixed, global frame that everything else is referenced to. Often, its origin is at a corner of the robot's workspace or at the base of the robot.
+*   **Robot Base Frame:** A frame attached to the base of the robot.
+*   **Tool Frame:** A frame attached to the end of the robot's arm (the "end-effector" or "tool").
+*   **Joint Frames:** A frame attached to each moving link of the robot.
+*   **Object Frames:** A frame attached to an object in the world that the robot needs to interact with.
+
+The core problem of robotics is managing the relationships between all these frames. We do this using **transformations**. A transformation is a mathematical operation (represented by a matrix) that converts the coordinates of a point from one frame to another.
+
+A standard **homogeneous transformation matrix (4x4)** can describe both the **rotation** and **translation** between two coordinate frames in a single operation. This is the fundamental building block of robot kinematics.
+
+`[ Point in Frame A ] = Transformation_A_to_B * [ Point in Frame B ]`
+
+## Kinematics: The Geometry of Motion
+
+Kinematics is the study of motion without considering the forces that cause it. It's about the geometry of the robot's structure.
+
+### Forward Kinematics (FK)
+
+Forward kinematics answers the question: **"Given a set of joint angles, where is the robot's hand?"**
+
+*   **Input:** The angles of all the robot's joints (e.g., `[θ1, θ2, θ3, ...]` ).
+*   **Output:** The position and orientation of the end-effector (the "tool") in the world frame.
+
+This is the "easy" problem. By chaining together the transformation matrices for each joint from the base of the robot to the tool, we can calculate the final position and orientation of the tool.
+
+`T_world_to_tool = T_world_to_joint1 * T_joint1_to_joint2 * ... * T_jointN_to_tool`
+
+We use forward kinematics constantly to determine the robot's current state.
+
+### Inverse Kinematics (IK)
+
+Inverse kinematics answers the question: **"To place the robot's hand at a desired position and orientation, what should the joint angles be?"**
+
+*   **Input:** The desired position and orientation of the end-effector.
+*   **Output:** The set of joint angles that will achieve that pose (`[θ1, θ2, θ3, ...]` ).
+
+This is the "hard" problem, and it is far more important for practical robotics. When we want a robot to pick up an object, we know where the object is (the target pose), and we need to calculate the joint angles to get there.
+
+Why is it hard?
+
+*   **Non-linearity:** The equations for IK are complex and non-linear.
+*   **Multiple Solutions:** For a typical robotic arm, there may be multiple combinations of joint angles that result in the exact same end-effector pose (e.g., "elbow up" vs. "elbow down").
+*   **No Solution:** The desired pose may be outside the robot's reachable workspace.
+*   **Singularities:** There are certain configurations (singularities) where the robot loses one or more degrees of freedom, and the IK problem becomes ill-defined (e.g., when a robot's arm is fully extended).
+
+IK is often solved using numerical optimization methods rather than a direct analytical solution. The solver iteratively adjusts the joint angles to minimize the error between the current tool pose and the desired tool pose.
+
+## Dynamics: The Physics of Motion
+
+While kinematics describes the geometry of motion, **dynamics** takes into account the forces involved: mass, inertia, gravity, friction, and motor forces.
+
+Dynamics answers questions like:
+
+*   **Forward Dynamics:** "Given a set of motor torques, what will be the resulting acceleration and motion of the robot's joints?"
+*   **Inverse Dynamics:** "To achieve a desired trajectory (a path of positions, velocities, and accelerations), what torques must the motors apply?"
+
+Inverse dynamics is crucial for advanced control. If a robot is to follow a path precisely, the controller must use an inverse dynamics model to calculate the exact torques needed to overcome inertia and gravity at every point along the trajectory. This is known as **feedforward control** and is a key component of high-performance robot control systems.

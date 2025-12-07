@@ -1,0 +1,21 @@
+{
+  "id": "Intro",
+  "title": "Introduction",
+  "description": "Welcome to this comprehensive textbook on Physical AI and Humanoid Robotics. This course is designed to take you from the fundamental principles of robotics to the cutting-edge of artificial intelligence as it applies to machines that can physically interact with the world.",
+  "source": "@site/docs/Intro.mdx",
+  "sourceDirName": ".",
+  "slug": "/Intro",
+  "permalink": "/docs/Intro",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Introduction"
+  },
+  "sidebar": "tutorialSidebar",
+  "next": {
+    "title": "Abstract",
+    "permalink": "/docs/Abstract"
+  }
+}

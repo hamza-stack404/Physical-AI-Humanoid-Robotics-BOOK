@@ -1,0 +1,25 @@
+{
+  "id": "Abstract",
+  "title": "Abstract",
+  "description": "This textbook embarks on an exploration of Physical AI, a field at the confluence of artificial intelligence, robotics, and embodied cognition. For decades, artificial intelligence has been largely confined to the digital realm, mastering games and processing vast amounts of data. However, the next frontier of AI is physical. It is about creating intelligent systems that can perceive, reason, and act in the complex, dynamic, and unpredictable physical world.",
+  "source": "@site/docs/Abstract.mdx",
+  "sourceDirName": ".",
+  "slug": "/Abstract",
+  "permalink": "/docs/Abstract",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Abstract"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Introduction",
+    "permalink": "/docs/Intro"
+  },
+  "next": {
+    "title": "Physical AI",
+    "permalink": "/docs/Physical AI"
+  }
+}

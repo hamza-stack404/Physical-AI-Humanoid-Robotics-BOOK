@@ -1,0 +1,25 @@
+{
+  "id": "Humanoid Kinematics & Dynamics",
+  "title": "Humanoid Kinematics & Dynamics",
+  "description": "Building on the foundational concepts of kinematics and dynamics, this chapter applies these principles specifically to the intricate and high-dimensional systems of humanoid robots. Humanoids present unique challenges due to their many degrees of freedom (DoF), redundancy, and the inherent instability of bipedal locomotion.",
+  "source": "@site/docs/Humanoid Kinematics & Dynamics.mdx",
+  "sourceDirName": ".",
+  "slug": "/Humanoid Kinematics & Dynamics",
+  "permalink": "/docs/Humanoid Kinematics & Dynamics",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Humanoid Kinematics & Dynamics"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Robot Locomotion Mechanics",
+    "permalink": "/docs/Robot Locomotion Mechanics"
+  },
+  "next": {
+    "title": "AI for Embodied Intelligence",
+    "permalink": "/docs/AI for Embodied Intelligence"
+  }
+}

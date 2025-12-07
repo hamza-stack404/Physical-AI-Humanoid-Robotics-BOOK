@@ -1,0 +1,79 @@
+---
+title: Sensors & Actuators
+---
+
+# Sensors & Actuators: The Robot's Body
+
+For a Physical AI to interact with the real world, it needs the means to perceive its surroundings and to act upon them. This is achieved through **sensors** and **actuators**, which are analogous to a biological organism's sensory organs and muscles. This chapter introduces the fundamental types and principles of these critical robotic components.
+
+## 1. Sensors: Perceiving the World
+
+Sensors are devices that measure a physical quantity and convert it into a signal that can be read by a robot's controller.
+
+### A. Proprioceptive Sensors (Internal State)
+
+These sensors provide information about the robot's own internal state.
+
+*   **Encoders:** Measure the angular position or velocity of a motor shaft or joint.
+    *   **Incremental Encoders:** Provide pulses for each increment of movement.
+    *   **Absolute Encoders:** Provide a unique code for each position, even after power loss.
+*   **Inertial Measurement Units (IMUs):** Contain accelerometers (measure linear acceleration), gyroscopes (measure angular velocity), and sometimes magnetometers (measure magnetic field for orientation). Provide data on orientation, rotation, and linear movement.
+*   **Force/Torque Sensors:** Measure forces and torques applied at specific points, often at the wrist of a robot arm or within the feet of a humanoid. Critical for manipulation and balance.
+*   **Potentiometers:** Measure linear or angular displacement.
+
+### B. Exteroceptive Sensors (External World)
+
+These sensors provide information about the robot's external environment.
+
+*   **Vision Sensors (Cameras):** Capture images or video.
+    *   **Monocular Cameras:** Provide 2D images.
+    *   **Stereo Cameras:** Provide depth information.
+    *   **RGB-D Cameras (e.g., LiDAR, Structured Light):** Provide both color and depth data.
+*   **Range Sensors:** Measure the distance to objects.
+    *   **Ultrasonic Sensors:** Emit sound waves and measure the time for the echo to return. Effective for short to medium distances.
+    *   **Infrared (IR) Sensors:** Emit IR light and measure the reflected signal or time of flight.
+    *   **LiDAR (Light Detection and Ranging):** Uses lasers to create precise 3D point clouds of the environment.
+*   **Tactile Sensors:** Detect physical contact and pressure.
+    *   **Pressure Sensors:** Measure force distribution.
+    *   **Touch Switches:** Simple on/off contact detection.
+*   **Microphones:** Capture audio for speech recognition or sound event detection.
+
+<h2>2. Actuators: Acting on the World</h2>
+
+Actuators are the "muscles" of a robot, converting energy (electrical, pneumatic, hydraulic) into physical motion or force.
+
+<h3>A. Electric Motors</h3>
+
+The most common type of actuator in robotics.
+
+*   **DC Motors:** Simple, inexpensive, but generally lower power and less precise without gearing.
+*   **Brushless DC (BLDC) Motors:** More efficient, higher power, and longer lifespan than brushed DC motors. Commonly used in drones and high-performance robots.
+*   **Stepper Motors:** Move in discrete steps, useful for precise positioning without complex feedback, but can lose steps under load.
+*   **Servo Motors:** A DC or BLDC motor combined with a gearbox and a control circuit to provide precise angular positioning. Widely used in hobby robotics and some industrial applications.
+
+<h3>B. Gears and Transmissions</h3>
+
+Motors often produce high speed and low torque. Gears are used to reduce speed and increase torque, matching the motor's output to the robot's requirements.
+
+*   **Harmonic Drives:** Provide high gear ratios, low backlash, and compact size, often used in precision robotic arms.
+
+<h3>C. Hydraulic Actuators</h3>
+
+*   **Principle:** Use incompressible fluid (oil) under pressure to generate linear or rotary motion.
+*   **Advantages:** Extremely high power density, very stiff (resist external forces well), fast response.
+*   **Applications:** Heavy-duty industrial robots, construction machinery, and highly dynamic humanoids like Boston Dynamics' Atlas.
+*   **Disadvantages:** Complex plumbing, leaks, noise, requires a power unit with pumps and reservoirs.
+
+<h3>D. Pneumatic Actuators</h3>
+
+*   **Principle:** Use compressed air to generate linear or rotary motion.
+*   **Advantages:** Clean, fast, relatively inexpensive, inherent compliance (safer for human interaction).
+*   **Applications:** Simple grippers, soft robots, industrial automation where precise force control is not critical.
+*   **Disadvantages:** Less precise control than hydraulics or electric motors, "squishy" feel due to air compressibility, requires an air compressor.
+
+<h3>E. Specialized Actuators</h3>
+
+*   **Shape Memory Alloys (SMAs):** Materials that "remember" a shape and return to it when heated. Used in some soft robotics or small-scale applications.
+*   **Electroactive Polymers (EAPs):** "Artificial muscles" that change shape or size when an electric field is applied. Still largely a research area.
+
+The careful selection and integration of sensors and actuators are paramount to a robot's capabilities. They define what a robot can perceive and what actions it can take, forming the fundamental physical interface between the AI and the real world.

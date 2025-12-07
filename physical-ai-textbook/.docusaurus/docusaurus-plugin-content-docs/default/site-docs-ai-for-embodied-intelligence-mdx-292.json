@@ -1,0 +1,25 @@
+{
+  "id": "AI for Embodied Intelligence",
+  "title": "AI for Embodied Intelligence",
+  "description": "Embodied Intelligence is a paradigm of artificial intelligence that posits that intelligence emerges from the interaction between an agent's body and its environment. It's a departure from the traditional view of AI as a disembodied \"brain in a vat\" that processes abstract symbols. For an embodied agent, the body is not just a passive shell; it is an active participant in the cognitive process.",
+  "source": "@site/docs/AI for Embodied Intelligence.mdx",
+  "sourceDirName": ".",
+  "slug": "/AI for Embodied Intelligence",
+  "permalink": "/docs/AI for Embodied Intelligence",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "AI for Embodied Intelligence"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Humanoid Kinematics & Dynamics",
+    "permalink": "/docs/Humanoid Kinematics & Dynamics"
+  },
+  "next": {
+    "title": "Perception Systems (Vision, Audio, Tactile)",
+    "permalink": "/docs/Perception Systems (Vision, Audio, Tactile)"
+  }
+}

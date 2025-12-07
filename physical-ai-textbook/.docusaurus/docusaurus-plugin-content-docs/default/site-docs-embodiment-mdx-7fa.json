@@ -1,0 +1,25 @@
+{
+  "id": "Embodiment",
+  "title": "Embodiment",
+  "description": "In the study of Physical AI, embodiment is a foundational concept. It is the idea that intelligence is not a disembodied process of abstract symbol manipulation, but is instead deeply and inextricably linked to the physical form of an agent—its body. This chapter explores the profound implications of this idea.",
+  "source": "@site/docs/Embodiment.mdx",
+  "sourceDirName": ".",
+  "slug": "/Embodiment",
+  "permalink": "/docs/Embodiment",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Embodiment"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Physical AI",
+    "permalink": "/docs/Physical AI"
+  },
+  "next": {
+    "title": "Foundations of Robotics",
+    "permalink": "/docs/Foundations of Robotics"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "Perception Systems (Vision, Audio, Tactile)",
+  "title": "Perception Systems (Vision, Audio, Tactile)",
+  "description": "For a robot to intelligently interact with its environment, it must first be able to perceive it. Perception systems are the robot's \"senses,\" allowing it to gather information about the world around it and its own internal state. This chapter explores the primary perceptual modalities used in Physical AI: vision, audio, and touch (tactile sensing).",
+  "source": "@site/docs/Perception Systems (Vision, Audio, Tactile).mdx",
+  "sourceDirName": ".",
+  "slug": "/Perception Systems (Vision, Audio, Tactile)",
+  "permalink": "/docs/Perception Systems (Vision, Audio, Tactile)",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Perception Systems (Vision, Audio, Tactile)"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "AI for Embodied Intelligence",
+    "permalink": "/docs/AI for Embodied Intelligence"
+  },
+  "next": {
+    "title": "AI Control",
+    "permalink": "/docs/AI Control"
+  }
+}

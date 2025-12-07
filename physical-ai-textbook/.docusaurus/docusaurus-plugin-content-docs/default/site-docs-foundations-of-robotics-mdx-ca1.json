@@ -1,0 +1,25 @@
+{
+  "id": "Foundations of Robotics",
+  "title": "Foundations of Robotics",
+  "description": "Before we can make a robot intelligent, we must first understand how to describe and command its motion. This chapter introduces the mathematical foundations of robotics: the language we use to define the position, orientation, and movement of a robot in its world.",
+  "source": "@site/docs/Foundations of Robotics.mdx",
+  "sourceDirName": ".",
+  "slug": "/Foundations of Robotics",
+  "permalink": "/docs/Foundations of Robotics",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Foundations of Robotics"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Embodiment",
+    "permalink": "/docs/Embodiment"
+  },
+  "next": {
+    "title": "Sensors & Actuators",
+    "permalink": "/docs/Sensors & Actuators"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "Human-Robot Interaction",
+  "title": "Human-Robot Interaction",
+  "description": "As robots become more prevalent in our daily lives, industries, and homes, the ability for humans and robots to interact safely, intuitively, and efficiently becomes paramount. Human-Robot Interaction (HRI) is the multidisciplinary field dedicated to understanding, designing, and evaluating robotic systems for use by or with humans.",
+  "source": "@site/docs/Human-Robot Interaction.mdx",
+  "sourceDirName": ".",
+  "slug": "/Human-Robot Interaction",
+  "permalink": "/docs/Human-Robot Interaction",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Human-Robot Interaction"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "AI Control",
+    "permalink": "/docs/AI Control"
+  },
+  "next": {
+    "title": "Challenges",
+    "permalink": "/docs/Challenges"
+  }
+}

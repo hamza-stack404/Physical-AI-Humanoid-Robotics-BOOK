@@ -1,0 +1,145 @@
+{
+  "/__docusaurus/debug-5ff": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/config-5ba": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/content-a2b": {
+    "__comp": "__comp---theme-debug-contentba-8-ce7",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    },
+    "__props": "__props---docusaurus-debug-content-3-c-0-be2"
+  },
+  "/__docusaurus/debug/globalData-c3c": {
+    "__comp": "__comp---theme-debug-global-dataede-0fa",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/metadata-156": {
+    "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/registry-88c": {
+    "__comp": "__comp---theme-debug-registry-679-501",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/routes-000": {
+    "__comp": "__comp---theme-debug-routes-946-699",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/docs-9f1": {
+    "__comp": "__comp---theme-docs-root-5-e-9-0b6",
+    "__context": {
+      "plugin": "plugin---docsaba-d7c"
+    }
+  },
+  "/docs-721": {
+    "__comp": "__comp---theme-doc-version-roota-7-b-5de",
+    "__props": "__props---docs-005-788"
+  },
+  "/docs-327": {
+    "__comp": "__comp---theme-doc-roota-94-67a"
+  },
+  "/docs/Abstract-363": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-abstract-5-b-7-28c"
+  },
+  "/docs/AI Control-a5f": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ai-control-0-e-4-67e"
+  },
+  "/docs/AI for Embodied Intelligence-432": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-ai-for-embodied-intelligence-292-fca"
+  },
+  "/docs/APA References-3ee": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-apa-referencesaaa-c4a"
+  },
+  "/docs/Case Studies-851": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-case-studies-8-f-6-94c"
+  },
+  "/docs/Challenges-d5d": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-challengesbd-8-cb3"
+  },
+  "/docs/Conclusion-0c4": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-conclusion-32-d-d7c"
+  },
+  "/docs/Control Systems-4d8": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-control-systems-099-bfc"
+  },
+  "/docs/Embodiment-bcb": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-embodiment-7-fa-70f"
+  },
+  "/docs/Foundations of Robotics-c62": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-foundations-of-roboticsca-1-c25"
+  },
+  "/docs/Future-d02": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-future-9-dd-9f3"
+  },
+  "/docs/Future of Physical AI & Case Studies-9bd": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-future-of-physical-ai-case-studies-70-e-798"
+  },
+  "/docs/Human-Robot Interaction-4fd": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-human-robot-interaction-1-e-9-460"
+  },
+  "/docs/Humanoid Architecture-46b": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-humanoid-architectureaf-6-475"
+  },
+  "/docs/Humanoid Kinematics & Dynamics-9c3": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-humanoid-kinematics-dynamicsfe-7-02b"
+  },
+  "/docs/Intro-586": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-intro-937-1e5"
+  },
+  "/docs/Perception Systems (Vision, Audio, Tactile)-132": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-perception-systems-vision-audio-tactile-56-f-10a"
+  },
+  "/docs/Physical AI-911": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-physical-a-ie-66-492"
+  },
+  "/docs/Robot Locomotion Mechanics-020": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-robot-locomotion-mechanics-9-b-7-f41"
+  },
+  "/docs/Sensors & Actuators-35e": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-sensors-actuators-194-96c"
+  },
+  "/-2e1": {
+    "__comp": "__comp---site-src-pages-index-jsc-4-f-f99",
+    "__context": {
+      "plugin": "plugin---a-74-9d6"
+    },
+    "config": "config---5-e-9-4f3"
+  }
+}

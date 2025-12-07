@@ -1,0 +1,25 @@
+{
+  "id": "Control Systems",
+  "title": "Control Systems",
+  "description": "Having the right sensors and actuators is only half the battle. A robot is just a collection of inert hardware without a control system to orchestrate its actions. This chapter delves into the fundamental principles of control theory, the \"nervous system\" that allows a robot to translate goals into precise, reliable motion.",
+  "source": "@site/docs/Control Systems.mdx",
+  "sourceDirName": ".",
+  "slug": "/Control Systems",
+  "permalink": "/docs/Control Systems",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Control Systems"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Sensors & Actuators",
+    "permalink": "/docs/Sensors & Actuators"
+  },
+  "next": {
+    "title": "Humanoid Architecture",
+    "permalink": "/docs/Humanoid Architecture"
+  }
+}

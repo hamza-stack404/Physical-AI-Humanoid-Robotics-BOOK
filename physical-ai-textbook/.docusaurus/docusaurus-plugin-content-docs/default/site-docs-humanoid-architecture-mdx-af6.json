@@ -1,0 +1,25 @@
+{
+  "id": "Humanoid Architecture",
+  "title": "Humanoid Architecture",
+  "description": "Humanoid robots are complex machines designed to mimic the human form, capable of operating in environments built for humans. Their architecture presents unique challenges and opportunities compared to other robot types. This chapter explores the fundamental design considerations and typical structural components of humanoid robots.",
+  "source": "@site/docs/Humanoid Architecture.mdx",
+  "sourceDirName": ".",
+  "slug": "/Humanoid Architecture",
+  "permalink": "/docs/Humanoid Architecture",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "title": "Humanoid Architecture"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Control Systems",
+    "permalink": "/docs/Control Systems"
+  },
+  "next": {
+    "title": "Robot Locomotion Mechanics",
+    "permalink": "/docs/Robot Locomotion Mechanics"
+  }
+}

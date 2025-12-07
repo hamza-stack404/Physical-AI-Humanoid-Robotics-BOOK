@@ -1,0 +1,11 @@
+fastapi
+openai
+qdrant-client
+psycopg2-binary
+uvicorn
+numpy
+# Choose one of these for deep learning, or both if needed
+# tensorflow
+# torch
+langchain
+python-dotenv

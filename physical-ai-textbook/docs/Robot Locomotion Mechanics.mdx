@@ -1,0 +1,70 @@
+---
+title: Robot Locomotion Mechanics
+---
+
+# Robot Locomotion Mechanics: How Humanoids Move
+
+Locomotion is one of the most fundamental and challenging problems in humanoid robotics. Unlike wheeled robots, humanoids must actively maintain balance while moving, much like humans do. This chapter delves into the mechanics and control strategies behind various forms of humanoid locomotion, with a particular focus on bipedal walking.
+
+## 1. Locomotion Strategies
+
+Humanoid robots can employ several locomotion strategies, each with its own advantages and challenges:
+
+### A. Static Walking
+
+*   **Principle:** The robot's Zero Moment Point (ZMP) always stays within the support polygon (the area defined by the contact points of its feet on the ground). This means the robot is always in a state of static balance.
+*   **Characteristics:** Very slow, deliberate movements. The robot shifts its entire weight over one foot before lifting the other.
+*   **Advantage:** Simpler control, inherently stable.
+*   **Disadvantage:** Extremely slow, cannot handle disturbances well, unnatural gait.
+
+### B. Dynamic Walking (Passive Dynamic Walking & Actively Controlled Dynamic Walking)
+
+*   **Principle:** The robot leverages its own inertia and the forces of gravity to achieve more natural, energy-efficient gaits. The ZMP can move outside the support polygon for brief periods, relying on active control to restore balance.
+*   **Passive Dynamic Walking:** Robots are designed with specific leg geometry and mass distribution such that they can walk down a gentle slope using only gravity, without any actuation or complex control. This demonstrates the power of morphological computation.
+*   **Actively Controlled Dynamic Walking:** Modern humanoids use powerful actuators and sophisticated control algorithms to generate dynamic gaits, where each step is a controlled fall.
+
+### C. Other Locomotion Modes
+
+*   **Running/Jumping:** Highly dynamic movements that involve periods where both feet are off the ground. Requires advanced balance control and powerful actuators.
+*   **Stair Climbing:** Requires adapting gait to uneven terrain, often involving multi-contact planning (e.g., using hands for support).
+*   **Uneven Terrain Navigation:** Leveraging sensors and intelligent planning to traverse rough or cluttered environments.
+
+## 2. Key Concepts in Bipedal Stability
+
+### A. Zero Moment Point (ZMP)
+
+As introduced in Humanoid Kinematics & Dynamics, the ZMP is fundamental. For a robot to not fall over, its ZMP must be controlled.
+
+*   **Control Objective:** The primary goal of a walking controller is often to keep the ZMP within the support polygon during static phases and to guide its trajectory safely within the stability margin during dynamic phases.
+*   **Computation:** The ZMP is calculated from the robot's current kinematics, dynamics, and ground reaction forces.
+
+### B. Center of Mass (CoM) Trajectory
+
+The trajectory of the robot's Center of Mass (CoM) is tightly coupled with the ZMP.
+
+*   **Linear Inverted Pendulum Model (LIPM):** A widely used simplification for walking control. It models the robot as a point mass (CoM) on an inverted pendulum, where the pivot point is the ZMP. This model allows for simpler and faster calculations for generating stable CoM trajectories.
+*   **CoM Height Control:** Maintaining appropriate CoM height is crucial for stability and energy efficiency during walking.
+
+## 3. Gait Generation
+
+Gait generation is the process of planning the sequence of leg movements, foot placements, and body postures that constitute a walk.
+
+### A. Pattern Generators
+
+*   **Central Pattern Generators (CPGs):** Bio-inspired oscillatory neural networks that can produce rhythmic outputs (like walking patterns) without continuous sensory input. They can be modulated by higher-level commands and sensory feedback.
+*   **Model-Based Pattern Generators:** Using simplified models (like LIPM) to analytically generate stable walking patterns.
+
+### B. Trajectory Optimization
+
+*   **Full-Body Trajectory Optimization:** For highly dynamic and complex gaits (e.g., running, jumping), optimization algorithms are used to plan the full trajectory of all joints and the ZMP, respecting robot capabilities (joint limits, torque limits) and stability constraints.
+*   **Cost Functions:** Optimization typically minimizes energy consumption, impact forces, or deviation from a desired path, while maximizing stability.
+
+## 4. Balance Control During Locomotion
+
+Even with a well-planned gait, external disturbances or unexpected terrain changes require active balance control.
+
+*   **Feedback Control:** Using sensor data (IMUs, force sensors) to detect deviations from the planned trajectory and applying corrective torques to joints.
+*   **Momentum Control:** Using the robot's internal momentum (e.g., swinging arms) to counteract external forces and maintain balance.
+*   **Capture Point:** A concept related to ZMP, it defines the point where the robot must step to come to a complete stop without falling. Controlling the foot placement relative to the capture point is key for dynamic balance.
+
+Robot locomotion mechanics is a fascinating blend of classical physics, advanced control theory, and computational optimization. The ability to robustly and efficiently move through the physical world is a defining characteristic of advanced Physical AI.

@@ -1,0 +1,48 @@
+/**
+ * Any CSS rules here will be
+ * applied to the entire Docusaurus project.
+ */
+ :root {
+  --ifm-color-primary: #007bff;
+  --ifm-color-primary-dark: #006fe6;
+  --ifm-color-primary-darker: #0069d9;
+  --ifm-color-primary-darkest: #0056b3;
+  --ifm-color-primary-light: #1a88ff;
+  --ifm-color-primary-lighter: #2990ff;
+  --ifm-color-primary-lightest: #4daaff;
+  --ifm-code-font-size: 95%;
+  --ifm-background-color: #f0f2f5;
+  --ifm-font-family-base: 'Inter', sans-serif;
+  --ifm-font-family-monospace: 'Fira Code', monospace;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+html[data-theme='light'] {
+  --ifm-color-primary: #007bff;
+  --ifm-background-color: #ffffff;
+  --ifm-font-color-base: #333333;
+}
+
+html[data-theme='dark'] {
+  --ifm-color-primary: #4dabf7;
+  --ifm-background-color: #121212;
+  --ifm-font-color-base: #e0e0e0;
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.2);
+}
+
+.navbar {
+  background: linear-gradient(45deg, #007bff, #4dabf7);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar__title {
+  font-weight: bold;
+}
+
+blockquote {
+  border-left: 5px solid var(--ifm-color-primary);
+  background-color: rgba(0, 123, 255, 0.1);
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 5px;
+}

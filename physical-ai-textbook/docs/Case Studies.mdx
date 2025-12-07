@@ -1,0 +1,43 @@
+---
+title: Case Studies
+---
+
+# Case Studies in Physical AI
+
+This chapter explores several landmark projects and systems that exemplify the principles of Physical AI. By examining these real-world examples, we can gain a deeper understanding of the challenges, solutions, and future potential of the field.
+
+## 1. Boston Dynamics: The Atlas Project
+
+Perhaps no system is more iconic in modern robotics than Atlas, the humanoid robot developed by Boston Dynamics. Atlas is a masterclass in dynamics, control, and robust hardware design.
+
+*   **Key Capabilities:** Atlas can run, jump, perform backflips, and navigate complex terrain. It demonstrates an unparalleled level of dynamic balance and agility.
+*   **Core Technologies:**
+    *   **Advanced Hydraulics:** Unlike most humanoids that use electric motors, Atlas is powered by a high-power hydraulic actuation system, enabling it to deliver immense force and speed.
+    *   **Model Predictive Control (MPC):** The robot's control system continuously runs a physics-based optimization that plans its movements (e.g., foot placements, torso adjustments) a fraction of a second into the future. It predicts how its body will move and chooses actions that best achieve its goals (e.g., maintaining balance, reaching a target).
+    *   **Perception-Driven Locomotion:** Using onboard cameras and LiDAR, Atlas perceives the world and adjusts its pre-planned parkour routines in real-time to account for variations in the environment.
+
+Atlas represents the pinnacle of classical and modern control theory applied to a complex humanoid form. While its intelligence is primarily focused on motion and control rather than high-level reasoning, it serves as a powerful platform upon which future AI can be built.
+
+## 2. Tesla Autopilot & Full Self-Driving (FSD)
+
+Tesla's approach to autonomous driving is a massive-scale Physical AI project. Each vehicle is an embodied agent that must perceive, reason, and act in one of the most dynamic environments imaginable: public roads.
+
+*   **Key Capabilities:** The system can perform lane-keeping, adaptive cruise control, automatic lane changes, and navigate from highway on-ramp to off-ramp. The FSD Beta extends this to city streets.
+*   **Core Technologies:**
+    *   **Vision-Based Perception:** Unlike many competitors who rely heavily on LiDAR, Tesla has pursued a vision-centric approach. An array of cameras around the car feeds into a deep neural network that is responsible for identifying lanes, vehicles, pedestrians, traffic lights, and other relevant features.
+    *   **Massive Data Collection:** The "Tesla Fleet" of hundreds of thousands of customer-owned vehicles acts as a data collection network. Edge cases and challenging scenarios encountered by the fleet are uploaded and used to train and improve the neural networks. This is a powerful example of real-world, continuous learning.
+    *   **Unified Planning and Control:** The system plans a trajectory for the vehicle and executes it using the steering, accelerator, and brakes. This entire stack, from perception to planning, is increasingly being handled by end-to-end neural networks.
+
+Tesla's FSD is a bet on the scalability of deep learning for embodied control, demonstrating how a vast amount of real-world interaction data can be used to train a highly complex AI system.
+
+## 3. DeepMind: Learning to Grasp and Manipulate
+
+Researchers at Google's DeepMind have conducted pioneering work in teaching robotic arms how to grasp and manipulate a wide variety of objects.
+
+*   **Key Capabilities:** Robotic arms learn, through trial and error, to pick up objects they have never seen before.
+*   **Core Technologies:**
+    *   **Deep Reinforcement Learning:** A neural network is trained to map raw pixel data from a camera directly to motor commands for the robotic arm.
+    *   **Large-Scale, Self-Supervised Learning:** The system learns without human intervention. Multiple robots run in parallel for thousands of hours, constantly attempting to grasp objects. Each attempt, whether successful or not, provides a data point that the shared neural network uses to learn. A successful grasp is its own reward signal.
+    *   **Q-Learning for Grasping:** The system learns a "Q-function" that predicts the probability of a successful grasp for every possible action (e.g., for every possible hand position, orientation, and closing action). The robot then simply executes the action with the highest predicted success rate.
+
+This work shows how complex, general-purpose skills can emerge from simple reward signals and massive amounts of physical interaction, bypassing the need for explicit programming or modeling of objects. It's a cornerstone of the data-driven approach to robotics.
