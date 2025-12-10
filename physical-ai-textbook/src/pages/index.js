@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import styles from './index.module.css';
+import Chatbot from '../components/Chatbot';
 
 function HomepageHeader() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
       <main>
+        <Chatbot />
         {/* You can add more sections here. */}
       </main>
     </Layout>

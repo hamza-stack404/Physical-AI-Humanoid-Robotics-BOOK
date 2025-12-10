@@ -1,0 +1,43 @@
+name: Deploy Docusaurus to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Deploy to GitHub Pages
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm install
+        working-directory: physical-ai-textbook
+
+      - name: Build Docusaurus
+        run: npm run build
+        working-directory: physical-ai-textbook
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./physical-ai-textbook/build
+          # Ensure this matches the baseUrl in docusaurus.config.js
+          # For project pages, it's usually /<REPO_NAME>/
+          # For user/org pages, it's usually /
+          # If your Docusaurus site is a project page (e.g., https://<USER>.github.io/<REPO_NAME>/),
+          # set this to <REPO_NAME>
+          # If your Docusaurus site is a user/organization page (e.g., https://<USER>.github.io/),
+          # set this to root (empty string)
+          # For this project, we assume a project page deployment based on the plan.md setup
+          # You might need to adjust this depending on the actual deployment strategy.
+          cname: '' # Set custom domain if needed, otherwise leave empty

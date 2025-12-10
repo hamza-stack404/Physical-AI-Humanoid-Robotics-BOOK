@@ -5,7 +5,7 @@
   "source": "@site/docs/Sensors & Actuators.mdx",
   "sourceDirName": ".",
   "slug": "/Sensors & Actuators",
-  "permalink": "/docs/Sensors & Actuators",
+  "permalink": "/your-repo-name/docs/Sensors & Actuators",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -16,10 +16,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Foundations of Robotics",
-    "permalink": "/docs/Foundations of Robotics"
+    "permalink": "/your-repo-name/docs/Foundations of Robotics"
   },
   "next": {
     "title": "Control Systems",
-    "permalink": "/docs/Control Systems"
+    "permalink": "/your-repo-name/docs/Control Systems"
   }
 }

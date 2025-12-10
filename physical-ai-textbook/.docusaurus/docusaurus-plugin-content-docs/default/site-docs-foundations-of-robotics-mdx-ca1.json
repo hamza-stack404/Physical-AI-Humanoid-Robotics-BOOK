@@ -5,7 +5,7 @@
   "source": "@site/docs/Foundations of Robotics.mdx",
   "sourceDirName": ".",
   "slug": "/Foundations of Robotics",
-  "permalink": "/docs/Foundations of Robotics",
+  "permalink": "/your-repo-name/docs/Foundations of Robotics",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -16,10 +16,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Embodiment",
-    "permalink": "/docs/Embodiment"
+    "permalink": "/your-repo-name/docs/Embodiment"
   },
   "next": {
     "title": "Sensors & Actuators",
-    "permalink": "/docs/Sensors & Actuators"
+    "permalink": "/your-repo-name/docs/Sensors & Actuators"
   }
 }

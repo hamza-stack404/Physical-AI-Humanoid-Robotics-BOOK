@@ -5,7 +5,7 @@
   "source": "@site/docs/AI for Embodied Intelligence.mdx",
   "sourceDirName": ".",
   "slug": "/AI for Embodied Intelligence",
-  "permalink": "/docs/AI for Embodied Intelligence",
+  "permalink": "/your-repo-name/docs/AI for Embodied Intelligence",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -16,10 +16,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Humanoid Kinematics & Dynamics",
-    "permalink": "/docs/Humanoid Kinematics & Dynamics"
+    "permalink": "/your-repo-name/docs/Humanoid Kinematics & Dynamics"
   },
   "next": {
     "title": "Perception Systems (Vision, Audio, Tactile)",
-    "permalink": "/docs/Perception Systems (Vision, Audio, Tactile)"
+    "permalink": "/your-repo-name/docs/Perception Systems (Vision, Audio, Tactile)"
   }
 }

@@ -5,7 +5,7 @@
   "source": "@site/docs/Abstract.mdx",
   "sourceDirName": ".",
   "slug": "/Abstract",
-  "permalink": "/docs/Abstract",
+  "permalink": "/your-repo-name/docs/Abstract",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -16,10 +16,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Introduction",
-    "permalink": "/docs/Intro"
+    "permalink": "/your-repo-name/docs/Intro"
   },
   "next": {
     "title": "Physical AI",
-    "permalink": "/docs/Physical AI"
+    "permalink": "/your-repo-name/docs/Physical AI"
   }
 }

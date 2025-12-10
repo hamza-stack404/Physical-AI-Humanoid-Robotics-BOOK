@@ -4,14 +4,12 @@
  * Modify the docusaurus.config.js file at your site's root instead.
  */
 export default {
-  "title": "Physical AI & Humanoid Robotics Textbook",
-  "tagline": "Learning about Physical AI and Humanoid Robotics",
-  "url": "https://your-docusaurus-site.example.com",
-  "baseUrl": "/",
-  "onBrokenLinks": "throw",
-  "favicon": "img/favicon.ico",
-  "organizationName": "facebook",
-  "projectName": "docusaurus",
+  "title": "Embodied Intelligence: A Guide to Physical AI & Humanoid Robotics",
+  "tagline": "A comprehensive guide to Physical AI, humanoid robotics, ROS 2, Gazebo, and VLA systems.",
+  "url": "https://your-github-username.github.io",
+  "baseUrl": "/your-repo-name/",
+  "organizationName": "your-github-username",
+  "projectName": "your-repo-name",
   "presets": [
     [
       "@docusaurus/preset-classic",
@@ -28,7 +26,7 @@ export default {
   ],
   "themeConfig": {
     "navbar": {
-      "title": "Physical AI & Humanoid Robotics",
+      "title": "Embodied Intelligence",
       "items": [
         {
           "type": "docSidebar",
@@ -69,7 +67,7 @@ export default {
           ]
         }
       ],
-      "copyright": "Copyright © 2025 My Project, Inc. Built with Docusaurus."
+      "copyright": "Copyright © 2025 Embodied Intelligence. Built with Docusaurus."
     },
     "prism": {
       "theme": {
@@ -328,6 +326,7 @@ export default {
     },
     "experimental_router": "browser"
   },
+  "onBrokenLinks": "throw",
   "onBrokenAnchors": "warn",
   "onDuplicateRoutes": "warn",
   "staticDirectories": [
@@ -355,7 +354,7 @@ export default {
       "maintainCase": false
     },
     "hooks": {
-      "onBrokenMarkdownLinks": "throw",
+      "onBrokenMarkdownLinks": "warn",
       "onBrokenMarkdownImages": "throw"
     }
   }

@@ -5,7 +5,7 @@
   "source": "@site/docs/Case Studies.mdx",
   "sourceDirName": ".",
   "slug": "/Case Studies",
-  "permalink": "/docs/Case Studies",
+  "permalink": "/your-repo-name/docs/Case Studies",
   "draft": false,
   "unlisted": false,
   "tags": [],

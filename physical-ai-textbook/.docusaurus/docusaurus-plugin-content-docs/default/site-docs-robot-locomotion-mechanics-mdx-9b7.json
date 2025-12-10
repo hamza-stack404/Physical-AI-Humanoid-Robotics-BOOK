@@ -5,7 +5,7 @@
   "source": "@site/docs/Robot Locomotion Mechanics.mdx",
   "sourceDirName": ".",
   "slug": "/Robot Locomotion Mechanics",
-  "permalink": "/docs/Robot Locomotion Mechanics",
+  "permalink": "/your-repo-name/docs/Robot Locomotion Mechanics",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -16,10 +16,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Humanoid Architecture",
-    "permalink": "/docs/Humanoid Architecture"
+    "permalink": "/your-repo-name/docs/Humanoid Architecture"
   },
   "next": {
     "title": "Humanoid Kinematics & Dynamics",
-    "permalink": "/docs/Humanoid Kinematics & Dynamics"
+    "permalink": "/your-repo-name/docs/Humanoid Kinematics & Dynamics"
   }
 }

@@ -3,132 +3,167 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
-    path: '/docs',
-    component: ComponentCreator('/docs', '9f1'),
+    path: '/your-repo-name/__docusaurus/debug',
+    component: ComponentCreator('/your-repo-name/__docusaurus/debug', '663'),
+    exact: true
+  },
+  {
+    path: '/your-repo-name/__docusaurus/debug/config',
+    component: ComponentCreator('/your-repo-name/__docusaurus/debug/config', '6b6'),
+    exact: true
+  },
+  {
+    path: '/your-repo-name/__docusaurus/debug/content',
+    component: ComponentCreator('/your-repo-name/__docusaurus/debug/content', '71f'),
+    exact: true
+  },
+  {
+    path: '/your-repo-name/__docusaurus/debug/globalData',
+    component: ComponentCreator('/your-repo-name/__docusaurus/debug/globalData', '01c'),
+    exact: true
+  },
+  {
+    path: '/your-repo-name/__docusaurus/debug/metadata',
+    component: ComponentCreator('/your-repo-name/__docusaurus/debug/metadata', '83f'),
+    exact: true
+  },
+  {
+    path: '/your-repo-name/__docusaurus/debug/registry',
+    component: ComponentCreator('/your-repo-name/__docusaurus/debug/registry', '122'),
+    exact: true
+  },
+  {
+    path: '/your-repo-name/__docusaurus/debug/routes',
+    component: ComponentCreator('/your-repo-name/__docusaurus/debug/routes', '9c2'),
+    exact: true
+  },
+  {
+    path: '/your-repo-name/docs',
+    component: ComponentCreator('/your-repo-name/docs', '7fb'),
     routes: [
       {
-        path: '/docs',
-        component: ComponentCreator('/docs', '721'),
+        path: '/your-repo-name/docs',
+        component: ComponentCreator('/your-repo-name/docs', '756'),
         routes: [
           {
-            path: '/docs',
-            component: ComponentCreator('/docs', '327'),
+            path: '/your-repo-name/docs',
+            component: ComponentCreator('/your-repo-name/docs', '4dd'),
             routes: [
               {
-                path: '/docs/Abstract',
-                component: ComponentCreator('/docs/Abstract', '363'),
+                path: '/your-repo-name/docs/Abstract',
+                component: ComponentCreator('/your-repo-name/docs/Abstract', '6bf'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/AI Control',
-                component: ComponentCreator('/docs/AI Control', 'a5f'),
+                path: '/your-repo-name/docs/AI Control',
+                component: ComponentCreator('/your-repo-name/docs/AI Control', 'b74'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/AI for Embodied Intelligence',
-                component: ComponentCreator('/docs/AI for Embodied Intelligence', '432'),
+                path: '/your-repo-name/docs/AI for Embodied Intelligence',
+                component: ComponentCreator('/your-repo-name/docs/AI for Embodied Intelligence', '32d'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/APA References',
-                component: ComponentCreator('/docs/APA References', '3ee'),
+                path: '/your-repo-name/docs/APA References',
+                component: ComponentCreator('/your-repo-name/docs/APA References', '8ed'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/Case Studies',
-                component: ComponentCreator('/docs/Case Studies', '851'),
+                path: '/your-repo-name/docs/Case Studies',
+                component: ComponentCreator('/your-repo-name/docs/Case Studies', '5e2'),
                 exact: true
               },
               {
-                path: '/docs/Challenges',
-                component: ComponentCreator('/docs/Challenges', 'd5d'),
+                path: '/your-repo-name/docs/Challenges',
+                component: ComponentCreator('/your-repo-name/docs/Challenges', '598'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/Conclusion',
-                component: ComponentCreator('/docs/Conclusion', '0c4'),
+                path: '/your-repo-name/docs/Conclusion',
+                component: ComponentCreator('/your-repo-name/docs/Conclusion', '3ff'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/Control Systems',
-                component: ComponentCreator('/docs/Control Systems', '4d8'),
+                path: '/your-repo-name/docs/Control Systems',
+                component: ComponentCreator('/your-repo-name/docs/Control Systems', '7dc'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/Embodiment',
-                component: ComponentCreator('/docs/Embodiment', 'bcb'),
+                path: '/your-repo-name/docs/Embodiment',
+                component: ComponentCreator('/your-repo-name/docs/Embodiment', 'db4'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/Foundations of Robotics',
-                component: ComponentCreator('/docs/Foundations of Robotics', 'c62'),
+                path: '/your-repo-name/docs/Foundations of Robotics',
+                component: ComponentCreator('/your-repo-name/docs/Foundations of Robotics', '0c6'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/Future',
-                component: ComponentCreator('/docs/Future', 'd02'),
+                path: '/your-repo-name/docs/Future',
+                component: ComponentCreator('/your-repo-name/docs/Future', '638'),
                 exact: true
               },
               {
-                path: '/docs/Future of Physical AI & Case Studies',
-                component: ComponentCreator('/docs/Future of Physical AI & Case Studies', '9bd'),
+                path: '/your-repo-name/docs/Future of Physical AI & Case Studies',
+                component: ComponentCreator('/your-repo-name/docs/Future of Physical AI & Case Studies', 'b46'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/Human-Robot Interaction',
-                component: ComponentCreator('/docs/Human-Robot Interaction', '4fd'),
+                path: '/your-repo-name/docs/Human-Robot Interaction',
+                component: ComponentCreator('/your-repo-name/docs/Human-Robot Interaction', '807'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/Humanoid Architecture',
-                component: ComponentCreator('/docs/Humanoid Architecture', '46b'),
+                path: '/your-repo-name/docs/Humanoid Architecture',
+                component: ComponentCreator('/your-repo-name/docs/Humanoid Architecture', '811'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/Humanoid Kinematics & Dynamics',
-                component: ComponentCreator('/docs/Humanoid Kinematics & Dynamics', '9c3'),
+                path: '/your-repo-name/docs/Humanoid Kinematics & Dynamics',
+                component: ComponentCreator('/your-repo-name/docs/Humanoid Kinematics & Dynamics', '4b0'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/Intro',
-                component: ComponentCreator('/docs/Intro', '586'),
+                path: '/your-repo-name/docs/Intro',
+                component: ComponentCreator('/your-repo-name/docs/Intro', 'aae'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/Perception Systems (Vision, Audio, Tactile)',
-                component: ComponentCreator('/docs/Perception Systems (Vision, Audio, Tactile)', '132'),
+                path: '/your-repo-name/docs/Perception Systems (Vision, Audio, Tactile)',
+                component: ComponentCreator('/your-repo-name/docs/Perception Systems (Vision, Audio, Tactile)', '5aa'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/Physical AI',
-                component: ComponentCreator('/docs/Physical AI', '911'),
+                path: '/your-repo-name/docs/Physical AI',
+                component: ComponentCreator('/your-repo-name/docs/Physical AI', '997'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/Robot Locomotion Mechanics',
-                component: ComponentCreator('/docs/Robot Locomotion Mechanics', '020'),
+                path: '/your-repo-name/docs/Robot Locomotion Mechanics',
+                component: ComponentCreator('/your-repo-name/docs/Robot Locomotion Mechanics', 'c2e'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs/Sensors & Actuators',
-                component: ComponentCreator('/docs/Sensors & Actuators', '35e'),
+                path: '/your-repo-name/docs/Sensors & Actuators',
+                component: ComponentCreator('/your-repo-name/docs/Sensors & Actuators', 'f61'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               }
@@ -139,8 +174,8 @@ export default [
     ]
   },
   {
-    path: '/',
-    component: ComponentCreator('/', '2e1'),
+    path: '/your-repo-name/',
+    component: ComponentCreator('/your-repo-name/', '8ba'),
     exact: true
   },
   {

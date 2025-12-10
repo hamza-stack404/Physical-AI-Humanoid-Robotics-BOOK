@@ -5,7 +5,7 @@
   "source": "@site/docs/Embodiment.mdx",
   "sourceDirName": ".",
   "slug": "/Embodiment",
-  "permalink": "/docs/Embodiment",
+  "permalink": "/your-repo-name/docs/Embodiment",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -16,10 +16,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Physical AI",
-    "permalink": "/docs/Physical AI"
+    "permalink": "/your-repo-name/docs/Physical AI"
   },
   "next": {
     "title": "Foundations of Robotics",
-    "permalink": "/docs/Foundations of Robotics"
+    "permalink": "/your-repo-name/docs/Foundations of Robotics"
   }
 }

@@ -1,18 +1,9 @@
 <!--
 Sync Impact Report:
-- Version change: 1.0.0 -> 1.1.0
-- Modified Principles:
-  - Scientific Accuracy -> Technical accuracy rooted in robotics, control theory, biomechanics, and AI research
-  - Engineering Clarity -> High educational clarity suitable for students with CS/engineering backgrounds
-  - Hands-on Orientation -> Hands-on applicability with clear explanations of real-world robotic systems
-  - Traceability (removed)
-  - AI-Native Workflow (removed)
-  - Modular Learning -> Modularity to fit a Docusaurus course structure (chapters → modules → lessons)
-  - New principle: Progressive learning flow: beginner → intermediate → advanced humanoid robotics
-- Modified Key Standards
-- Added Sections: Content structure requirements
-- Modified Constraints
-- Modified Success Criteria
+- Version change: 1.1.0 -> 1.2.0
+- Modified principles: Replaced existing detailed principles with a placeholder for future definition.
+- Added sections: None (existing sections were populated with new content).
+- Removed sections: None (existing sections were populated with new content).
 - Templates requiring updates:
   - .specify/templates/plan-template.md ⚠ pending
   - .specify/templates/spec-template.md ⚠ pending
@@ -20,66 +11,55 @@ Sync Impact Report:
 - Follow-up TODOs: None
 -->
 
-# Physical AI and Humanoid Robotics Course – Full Book for Docusaurus Constitution
+# Project Constitution
 
-## Core Principles
+## 1. Project Overview
 
-### Technical accuracy rooted in robotics, control theory, biomechanics, and AI research
-### Progressive learning flow: beginner → intermediate → advanced humanoid robotics
-### Hands-on applicability with clear explanations of real-world robotic systems
-### High educational clarity suitable for students with CS/engineering backgrounds
-### Modularity to fit a Docusaurus course structure (chapters → modules → lessons)
+### 1.1. Title
+Embodied Intelligence: Physical AI & Humanoid Robotics
 
-## Key Standards
+### 1.2. Core Goal
+Write, deploy, and augment a Docusaurus-based book on Physical AI and Humanoid Robotics, including an integrated RAG chatbot.
 
-- All technical statements must be backed by credible robotics/AI sources
-- Citation style: IEEE
-- Minimum 40% peer-reviewed research papers from robotics, biomechanics, and AI
-- Diagrams, figures, and code samples must be original, reproducible and tested
-- Mathematical formulas must follow LaTeX formatting
-- Writing clarity must match engineering-course standards (Flesch-Kincaid Grade 12+)
+### 1.3. Deliverables
+1. Docusaurus Book (Deployed to GitHub Pages).
+2. Integrated RAG Chatbot (FastAPI, Neon, Qdrant).
+3. Personalization/Translation Features (Better-Auth integration, Chapter personalization button, Urdu translation button).
 
-## Content structure requirements
+## 2. Core Principles
+(To be defined later based on project progression and specific content guidelines. For now, principles are implicitly derived from the Core Goal and Deliverables.)
 
-Multi-module book with at least 10 main chapters:
+## 3. Technology & Tools
 
-- Introduction to Physical AI
-- Foundations of Robotics
-- Sensors & Actuators
-- Control Systems
-- Robot Locomotion Mechanics
-- Humanoid Kinematics & Dynamics
-- Perception Systems (Vision, Audio, Tactile)
-- AI for Embodied Intelligence
-- Human-Robot Interaction
-- Future of Physical AI & Case Studies
+### 3.1. Required Tools
+- Docusaurus (Static Site Generator for the book).
+- Spec-Kit Plus (For driving the book content generation).
+- FastAPI (Backend for the RAG Chatbot and Auth).
+- Neon Serverless Postgres (Chatbot user/metadata storage).
+- Qdrant Cloud Free Tier (Vector Database for RAG).
+- OpenAI Agents/ChatKit SDKs (For RAG Chatbot logic).
+- Better-Auth (For Signup/Signin and user personalization).
 
-Each chapter must include:
+### 3.2. Agent Roles
+1. **Book_Author_Agent (Primary):** Responsible for generating the technical content for the 11 chapters based on the course details.
+2. **Docusaurus_Engineer_Agent:** Responsible for setting up the Docusaurus project structure and integrating custom React components (chatbot, personalization buttons).
+3. **RAG_Engineer_Agent:** Responsible for the FastAPI RAG backend, data ingestion logic, and Qdrant/Neon setup.
+4. **Auth_Engineer_Agent:** Responsible for integrating Better-Auth signup/signin flows and storing user background for personalization.
+5. **Translator_Agent (Subagent):** A dedicated, reusable skill to translate specified text content into Urdu.
 
-- Learning outcomes
-- Explanatory diagrams
-- At least 2 examples or micro-projects
-- References section
+## 4. Governance
 
-## Constraints
+### 4.1. Version
+1.2.0
 
-- Total length: 25,000–40,000 words
-- Minimum 40 credible sources
-- All content must be compatible with Docusaurus Markdown (MDX)
-- Code blocks must follow syntax highlighting for Python, C++, and ROS
-- Zero tolerance for plagiarism
-- All figures must be exportable as SVG/PNG for Docusaurus
+### 4.2. Ratification Date
+2025-12-08
 
-## Success Criteria
+### 4.3. Last Amended Date
+2025-12-08
 
-- Book compiles cleanly in Docusaurus with no broken links or MDX errors
-- Content passes AI/robotics technical accuracy review
-- All citations are verifiable and correctly formatted
-- Course flow is intuitive and supports beginner-to-advanced progression
-- Final book is publish-ready as a structured Physical AI & Humanoid Robotics course
+### 4.4. Amendment Procedure
+This constitution can be amended by a supermajority vote (2/3) of the project's core contributors. Proposed amendments must be circulated to all core contributors at least one week prior to a vote.
 
-## Governance
-
-Amendments to this constitution require documentation, a migration plan, and approval from the project lead. All pull requests and reviews must verify compliance with this constitution.
-
-**Version**: 1.1.0 | **Ratified**: 2025-12-05 | **Last Amended**: 2025-12-06
+### 4.5. Compliance Review
+Compliance with these principles will be reviewed quarterly by the project lead and documented in a publicly accessible report.

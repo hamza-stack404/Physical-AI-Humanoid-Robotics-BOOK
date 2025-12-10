@@ -5,7 +5,7 @@
   "source": "@site/docs/APA References.mdx",
   "sourceDirName": ".",
   "slug": "/APA References",
-  "permalink": "/docs/APA References",
+  "permalink": "/your-repo-name/docs/APA References",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -16,6 +16,6 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Conclusion",
-    "permalink": "/docs/Conclusion"
+    "permalink": "/your-repo-name/docs/Conclusion"
   }
 }

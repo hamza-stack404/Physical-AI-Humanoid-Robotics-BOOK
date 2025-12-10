@@ -5,7 +5,7 @@
   "source": "@site/docs/Human-Robot Interaction.mdx",
   "sourceDirName": ".",
   "slug": "/Human-Robot Interaction",
-  "permalink": "/docs/Human-Robot Interaction",
+  "permalink": "/your-repo-name/docs/Human-Robot Interaction",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -16,10 +16,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "AI Control",
-    "permalink": "/docs/AI Control"
+    "permalink": "/your-repo-name/docs/AI Control"
   },
   "next": {
     "title": "Challenges",
-    "permalink": "/docs/Challenges"
+    "permalink": "/your-repo-name/docs/Challenges"
   }
 }

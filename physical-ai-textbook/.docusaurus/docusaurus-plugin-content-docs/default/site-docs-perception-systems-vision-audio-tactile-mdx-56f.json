@@ -5,7 +5,7 @@
   "source": "@site/docs/Perception Systems (Vision, Audio, Tactile).mdx",
   "sourceDirName": ".",
   "slug": "/Perception Systems (Vision, Audio, Tactile)",
-  "permalink": "/docs/Perception Systems (Vision, Audio, Tactile)",
+  "permalink": "/your-repo-name/docs/Perception Systems (Vision, Audio, Tactile)",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -16,10 +16,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "AI for Embodied Intelligence",
-    "permalink": "/docs/AI for Embodied Intelligence"
+    "permalink": "/your-repo-name/docs/AI for Embodied Intelligence"
   },
   "next": {
     "title": "AI Control",
-    "permalink": "/docs/AI Control"
+    "permalink": "/your-repo-name/docs/AI Control"
   }
 }

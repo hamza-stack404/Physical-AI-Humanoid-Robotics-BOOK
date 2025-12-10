@@ -1,0 +1,242 @@
+openapi: 3.0.0
+info:
+  title: Embodied Intelligence Book API
+  version: 1.0.0
+  description: API for the Embodied Intelligence book, including RAG chatbot, personalization, and translation services.
+
+servers:
+  - url: http://localhost:8000/api/v1
+    description: Development server
+
+paths:
+  /auth/signup:
+    post:
+      summary: Register a new user
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - email
+                - password
+              properties:
+                email:
+                  type: string
+                  format: email
+                  description: User's email address
+                password:
+                  type: string
+                  format: password
+                  description: User's chosen password
+                background:
+                  type: object
+                  description: Optional user background information for personalization
+                  properties:
+                    softwareExperience:
+                      type: string
+                      description: Description of software experience (e.g., 'Low C++ experience')
+                    hardwareExperience:
+                      type: string
+                      description: Description of hardware experience
+      responses:
+        '201':
+          description: User successfully registered
+        '400':
+          description: Invalid input or user already exists
+
+  /auth/signin:
+    post:
+      summary: Authenticate and log in a user
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - email
+                - password
+              properties:
+                email:
+                  type: string
+                  format: email
+                password:
+                  type: string
+                  format: password
+      responses:
+        '200':
+          description: User successfully logged in
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  access_token:
+                    type: string
+                  token_type:
+                    type: string
+        '401':
+          description: Invalid credentials
+
+  /user/profile:
+    get:
+      summary: Retrieve authenticated user's profile
+      security:
+        - BearerAuth: []
+      responses:
+        '200':
+          description: User profile retrieved
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  email:
+                    type: string
+                    format: email
+                  background:
+                    type: object
+                    properties:
+                      softwareExperience:
+                        type: string
+                      hardwareExperience:
+                        type: string
+        '401':
+          description: Unauthorized
+    put:
+      summary: Update authenticated user's profile
+      security:
+        - BearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                softwareExperience:
+                  type: string
+                hardwareExperience:
+                  type: string
+      responses:
+        '200':
+          description: User profile updated
+        '401':
+          description: Unauthorized
+
+  /chatbot/query:
+    post:
+      summary: Submit a query to the RAG chatbot
+      security:
+        - BearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - query
+              properties:
+                query:
+                  type: string
+                  description: The natural language query for the chatbot
+      responses:
+        '200':
+          description: Chatbot response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  response:
+                    type: string
+                  source_references:
+                    type: array
+                    items:
+                      type: string
+        '400':
+          description: Invalid query
+
+  /content/personalize:
+    post:
+      summary: Get a personalized version of chapter content
+      security:
+        - BearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - chapterId
+                - originalContent
+              properties:
+                chapterId:
+                  type: string
+                  description: Identifier for the chapter
+                originalContent:
+                  type: string
+                  description: The original content of the chapter to personalize
+      responses:
+        '200':
+          description: Personalized chapter content
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  personalizedContent:
+                    type: string
+        '401':
+          description: Unauthorized
+        '404':
+          description: Chapter not found
+
+  /content/translate:
+    post:
+      summary: Get a translated version of chapter content
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - chapterId
+                - originalContent
+                - targetLanguage
+              properties:
+                chapterId:
+                  type: string
+                  description: Identifier for the chapter
+                originalContent:
+                  type: string
+                  description: The original content of the chapter to translate
+                targetLanguage:
+                  type: string
+                  description: Target language code (e.g., 'ur' for Urdu)
+      responses:
+        '200':
+          description: Translated chapter content
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  translatedContent:
+                    type: string
+        '400':
+          description: Invalid input or unsupported language
+        '404':
+          description: Chapter not found
+
+components:
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT

@@ -5,7 +5,7 @@
   "source": "@site/docs/Humanoid Kinematics & Dynamics.mdx",
   "sourceDirName": ".",
   "slug": "/Humanoid Kinematics & Dynamics",
-  "permalink": "/docs/Humanoid Kinematics & Dynamics",
+  "permalink": "/your-repo-name/docs/Humanoid Kinematics & Dynamics",
   "draft": false,
   "unlisted": false,
   "tags": [],
@@ -16,10 +16,10 @@
   "sidebar": "tutorialSidebar",
   "previous": {
     "title": "Robot Locomotion Mechanics",
-    "permalink": "/docs/Robot Locomotion Mechanics"
+    "permalink": "/your-repo-name/docs/Robot Locomotion Mechanics"
   },
   "next": {
     "title": "AI for Embodied Intelligence",
-    "permalink": "/docs/AI for Embodied Intelligence"
+    "permalink": "/your-repo-name/docs/AI for Embodied Intelligence"
   }
 }

@@ -1,111 +1,111 @@
 {
   "docusaurus-plugin-content-docs": {
     "default": {
-      "path": "/docs",
+      "path": "/your-repo-name/docs",
       "versions": [
         {
           "name": "current",
           "label": "Next",
           "isLast": true,
-          "path": "/docs",
+          "path": "/your-repo-name/docs",
           "mainDocId": "Intro",
           "docs": [
             {
               "id": "Abstract",
-              "path": "/docs/Abstract",
+              "path": "/your-repo-name/docs/Abstract",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "AI Control",
-              "path": "/docs/AI Control",
+              "path": "/your-repo-name/docs/AI Control",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "AI for Embodied Intelligence",
-              "path": "/docs/AI for Embodied Intelligence",
+              "path": "/your-repo-name/docs/AI for Embodied Intelligence",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "APA References",
-              "path": "/docs/APA References",
+              "path": "/your-repo-name/docs/APA References",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Case Studies",
-              "path": "/docs/Case Studies"
+              "path": "/your-repo-name/docs/Case Studies"
             },
             {
               "id": "Challenges",
-              "path": "/docs/Challenges",
+              "path": "/your-repo-name/docs/Challenges",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Conclusion",
-              "path": "/docs/Conclusion",
+              "path": "/your-repo-name/docs/Conclusion",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Control Systems",
-              "path": "/docs/Control Systems",
+              "path": "/your-repo-name/docs/Control Systems",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Embodiment",
-              "path": "/docs/Embodiment",
+              "path": "/your-repo-name/docs/Embodiment",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Foundations of Robotics",
-              "path": "/docs/Foundations of Robotics",
+              "path": "/your-repo-name/docs/Foundations of Robotics",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Future",
-              "path": "/docs/Future"
+              "path": "/your-repo-name/docs/Future"
             },
             {
               "id": "Future of Physical AI & Case Studies",
-              "path": "/docs/Future of Physical AI & Case Studies",
+              "path": "/your-repo-name/docs/Future of Physical AI & Case Studies",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Human-Robot Interaction",
-              "path": "/docs/Human-Robot Interaction",
+              "path": "/your-repo-name/docs/Human-Robot Interaction",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Humanoid Architecture",
-              "path": "/docs/Humanoid Architecture",
+              "path": "/your-repo-name/docs/Humanoid Architecture",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Humanoid Kinematics & Dynamics",
-              "path": "/docs/Humanoid Kinematics & Dynamics",
+              "path": "/your-repo-name/docs/Humanoid Kinematics & Dynamics",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Intro",
-              "path": "/docs/Intro",
+              "path": "/your-repo-name/docs/Intro",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Perception Systems (Vision, Audio, Tactile)",
-              "path": "/docs/Perception Systems (Vision, Audio, Tactile)",
+              "path": "/your-repo-name/docs/Perception Systems (Vision, Audio, Tactile)",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Physical AI",
-              "path": "/docs/Physical AI",
+              "path": "/your-repo-name/docs/Physical AI",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Robot Locomotion Mechanics",
-              "path": "/docs/Robot Locomotion Mechanics",
+              "path": "/your-repo-name/docs/Robot Locomotion Mechanics",
               "sidebar": "tutorialSidebar"
             },
             {
               "id": "Sensors & Actuators",
-              "path": "/docs/Sensors & Actuators",
+              "path": "/your-repo-name/docs/Sensors & Actuators",
               "sidebar": "tutorialSidebar"
             }
           ],
@@ -113,7 +113,7 @@
           "sidebars": {
             "tutorialSidebar": {
               "link": {
-                "path": "/docs/Intro",
+                "path": "/your-repo-name/docs/Intro",
                 "label": "Intro"
               }
             }

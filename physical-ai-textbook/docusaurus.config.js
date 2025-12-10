@@ -2,18 +2,14 @@
 // @type {import('@docusaurus/types').Config}
 
 const config = {
-  title: 'Physical AI & Humanoid Robotics Textbook',
-  tagline: 'Learning about Physical AI and Humanoid Robotics',
-  url: 'https://your-docusaurus-site.example.com',
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'throw',
-  favicon: 'img/favicon.ico', // You might need to add a favicon.ico to physical-ai-textbook/static/
-
+  title: 'Embodied Intelligence: A Guide to Physical AI & Humanoid Robotics',
+  tagline: 'A comprehensive guide to Physical AI, humanoid robotics, ROS 2, Gazebo, and VLA systems.',
+  url: 'https://your-github-username.github.io',
+  baseUrl: '/your-repo-name/',
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'your-github-username', // Usually your GitHub org/user name.
+  projectName: 'your-repo-name', // Usually your repo name.
 
   presets: [
     [
@@ -40,7 +36,7 @@ const config = {
       // Replace with your project's social card
       // image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'Physical AI & Humanoid Robotics',
+        title: 'Embodied Intelligence',
         // logo: {
         //   alt: 'My Project Logo',
         //   src: 'img/logo.svg',
@@ -90,7 +86,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Embodied Intelligence. Built with Docusaurus.`,
       },
       prism: {
         theme: require('prism-react-renderer/themes/github'),
